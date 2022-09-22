@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7.Layout</title>
+    <!--
+        날짜 : 2022/09/22
+        이름 : 공민혁
+        내용 : Layout 예제 문제풀기
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrapper {
+            width: 860px;
+            height: auto;
+            background: #aaaaaa;
+            margin: 0 auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 120px;
+            background: #ccc;            
+        }
+        main {
+            width: 100%;
+            height: auto;
+            background: #ccc;            
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        main > aside {
+            float: right;
+            width: 200px;
+            height: 400px;
+            background: #fff;
+            margin-left: 10px;
+
+        }
+        main > section {
+            float: left;
+            width: 400px;
+            height: 400px;
+            background-color: #fff;
+            
+        }
+        footer {
+            width: 100%;
+            height: 100px;
+            background: #ccc;            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h3>Header</h3>
+        </header>
+        <main>
+            <h3>Main</h3>
+            <aside>
+                <h4>Aside #1</h4>
+            </aside>
+            <aside>
+                <h4>Aside #2</h4>
+            </aside>
+            <section>
+                <h4>Section</h4>
+            </section>
+        </main>
+        <footer>
+            <h3>Footer</h3>
+        </footer>    
+    </div>
+</body>
+</html>
