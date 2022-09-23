@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web1</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+            font: normal 12px '고딕';
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #wrapper {
+            width: 800px;
+            height: auto;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 92px;
+            background: #2d3a4b;
+        }
+
+        header > a{
+        }
+        header .logo {
+            margin-top: 26px;
+            margin-left: 20px;
+        }
+
+        header > p {
+            float: right;
+            margin-top: 14px;
+            margin-right: 16px;
+        }
+        header > p > a {font-size: 12px;}
+        header > p > a:hover {color: #555;}
+
+        header > ul {
+            list-style: none;
+            width: 500px;
+            height: 26px;
+            position: absolute;
+            right: 40px;
+            bottom: 20px;
+        }
+
+        header > ul > li {
+            float: left;
+            width: 20%;
+            height: 100%;
+        
+        }
+
+        header > ul > li > a{font-size: 16px;}
+        header > ul > li > a:hover{color:#777}
+
+        main {
+            width: 100%;
+            height: 420px;
+
+            box-sizing: border-box;
+        }
+        main > section {
+            width: 100%;
+            height: auto;
+        }
+
+        main > div {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        main > div > article {
+            float : left;
+            text-align: center;
+            padding: 10px;
+            width: 50%;
+            height: 100px;
+            box-sizing: border-box;
+        }
+        footer {
+            width: 100%;
+            height: 90px;
+            margin-top: 8px;
+            padding-left : 10px;
+
+            box-sizing: border-box;
+        
+        }
+
+
+        footer > p {
+            float: right;
+            margin-right: 120px;
+            font-weight: 20px;
+            line-height: 20px;
+
+            
+        }
+        footer > img {
+            margin-top: 15px;
+        }
+        footer > p > span {
+            font-weight: bold;
+        }
+
+
+    </Style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="#"><img src="./img/logo.png" alt="로고" class="logo"></a>
+
+            <p>
+                <a href="#">HOME |</a>
+                <a href="#">LOGIN |</a>
+                <a href="#">JOIN |</a>
+                <a href="#">NOTICE</a>
+            </p>
+
+            <ul>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">CUSTOMER</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">RECRUIT</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section>
+            <img src="./img/main_img.png" alt="메인" class="mmain">
+            </section>
+            <div>
+                <article>
+                    <a href="#">
+                        <img src="./img/banner1.png" alt="서비스소개">
+                    </a>
+                </article>
+                <article>
+                    <a href="#">
+                        <img src="./img/banner2.png" alt="서비스소개">
+                    </a>
+                </article>
+            </div>
+        </main>
+
+        <footer>
+            <img src="./img/footer_logo.png" alt="">
+            <p>(주)포폴리오 / 부산시 부산진구 서면로 121 / 대표 : 홍길동<br/>
+                사업자번호 : 123-4567-890 / 전화 : 1588-0000 / 이메일 : master@pofolio.com<br/>
+                <span>ⓒPofolio All rights reserved.</span> 
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
