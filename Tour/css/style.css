@@ -16,13 +16,15 @@ a {text-decoration: none; color: #111;}
 header {
     width:100%;
     height: 100px;
-    /* border: 1px solid red; */
-    /* box-sizing: border-box; */
+    border: 1px solid red;
+    box-sizing: border-box;
 }
 header > div {
     position: relative;
     width: 1000px;
     height: 100px;
+    border: 1px solid green;
+    box-sizing: border-box;
     margin: 0 auto;
 }
 header > div > ul {
@@ -31,7 +33,8 @@ header > div > ul {
     bottom: 0;
     width: 100%;
     height: 28px;
-
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 header > div > ul > li {
     float: left;
@@ -43,14 +46,15 @@ header > div > ul > li {
 main {
     width: 1000px;
     height: auto;
-
+    border: 1px solid red;
     margin: 0 auto;
-
+    box-sizing: border-box;
 }
 main > section {
     width: 100%;
     height: 620px;
-
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 main > section > div {
     float: left;
@@ -69,7 +73,8 @@ main > section > div:nth-child(7) {clear: left; margin-left: 200px;}
 main > article {
     width: 100%;
     height: 150px;
-
+    border: 1px solid blue;
+    box-sizing: border-box;
 }
 main > article > div {
     float: left;
@@ -83,302 +88,7 @@ footer {
     width: 1000px;
     height: 100px;
     margin: 0 auto;
-
+    border: 1px solid red;
+    box-sizing: border-box;
 }
 footer > div {}
-
-/* main */
-        /* 태그 초기화 */
-        * {
-            margin: 0;
-            padding: 0;
-            font: normal 12px '돋움';
-        }
-
-        ul, ol {list-style: none;}
-        a {text-decoration: none; color: #111;}
-        #wrapper {
-            width: 100%;
-        }
-        /* 메인공통 */
-        main {
-            width: 1000px;
-            height: auto;
-            margin: 0 auto;
-
-        }
-        /* 헤더공통 */
-        header {
-            width:100%;
-            height: 100px;
-            background-color: #fefefe;
-            background-image: url(../img/header_bg.png);
-            background-repeat: repeat-x;
-            background-position: bottom;
-        }
-        /* 푸터공통 */
-        footer {
-            width: 1000px;
-            height: 100px;
-            margin: 0 auto;
-        }
-        /* 헤더 */
-        header > div {
-            position: relative;
-            width: 1000px;
-            height: 100px;
-            margin: 0 auto;
-        }
-        header .lnb {
-            float: right;
-            margin-right: 10px;
-            margin-top: 5px;
-        }
-        header .gnb{
-            position: absolute;
-            bottom: 0px;
-            width: 1000px;
-            height: 28px;
-            z-index: 10;
-            background: #becedb;
-        }
-        header .gnb > a {
-            float: left;
-            display: block;
-            width: 200px;
-            height: 28px;
-            text-align: center;
-            color: white;
-            font-weight: bold;
-            line-height: 28px;
-            border-right: 1px solid white;
-            box-sizing: border-box;
-        }
-        header .gnb > a:first-child{
-            border-left: 1px solid white;
-        }
-        header .gnb > a:hover {
-            color: #9eafbd;
-        }
-        /* 메인 */
-        main {
-            padding-top: 28px;
-        }
-
-        main > section {
-            position: relative;
-            width: 1000px;
-            height: 620px;
-            margin: 0 auto;
-            background: url(../img/main_bg.png);
-        }
-
-        section > article > .box1 > img:nth-child(1){margin-top: -28px;}
-
-        article > .box1 > img:nth-child(2) {
-            position: absolute;
-            left: 0px;
-            top: 0px;
-        }
-
-        main > div:nth-child(1){
-            position: absolute;
-        }
-
-        main > section > article > div:nth-child(1) {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            left: 0;
-            top: 0;
-            background: url(../img/main_box1_bg.png);
-        }
-        main > section > article > div:nth-child(2) {
-            position: absolute;
-            text-align: center;
-            width: 200px;
-            height: 200px;
-            left: 200px;
-            top: 0%;
-            padding-top: 30px;
-            background: url(../img/main_box2_bg.png);
-            box-sizing: border-box;
-        }
-        main > section > article > div:nth-child(3) {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            left: 400px;
-            top: 0%;
-            padding-top: 30px;
-            background: url(../img/main_box3_bg.png);
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        main > section > article > div:nth-child(3) > img:nth-child(1) {
-            position: absolute;
-            margin-left: 10px;
-            left: 20px;
-             top: 0;
-        }
-        main > section > article > div:nth-child(4) {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            left: 600px;
-            top: 0;
-            padding-top: 30px;
-            background: url(../img/main_box4_bg.png);
-            text-align: left;
-            box-sizing: border-box;
-        }
-        main > section > article > div:nth-child(5) {
-            width: 200px;
-            height: 200px;
-            background: url(../img/main_box5_bg.jpg) no-repeat;
-            position: absolute;
-            top: 200px;
-        }
-        main > section > article > div:nth-child(5) > img {
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-        main > section > article > div:nth-child(6) {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            top: 200px;
-            left: 200px;
-            background: url(../img/main_box6_bg.jpg) no-repeat;
-        }
-        main > section > article > div:nth-child(6) > img {
-            float: right;
-        }
-
-        main > section > article > div:nth-child(7) {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            top: 400px;
-            left: 200px;
-            padding-top: 18px;
-            background: url(../img/main_box7_bg.png);
-            text-align: center;
-            box-sizing: border-box;
-        }
-
-        main > section > article > div:nth-child(7) > img:nth-child(1) { 
-            position: absolute;
-            left: 20px;
-            top: 20px;
-        }
-        main > section > article > div:nth-child(7) > img:nth-child(2) { 
-            position: absolute;
-            left: 20px;
-            top: 50px;
-        }
-        main > section > article > div:nth-child(7) > img:nth-child(3) { 
-            position: absolute;
-            left: 22px;
-            top: 105px;
-        }
-        main > section {
-            width: 100%;
-            height: 620px;
-
-        }
-        main > section > div {
-            float: left;
-            width: 200px;
-            height: 200px;
-            border: 1px solid gray;
-            box-sizing: border-box;
-        }
-        main > article {
-            width: 100%;
-            height: 150px;
-            border: 1px solid blue;
-            box-sizing: border-box;
-        }
-        
-        main > article > div {
-            float: left;
-            width: 25%;
-            height: 100%;
-            border: 1px solid green;
-            box-sizing: border-box;
-        }
-
-        #latest {
-            width: 1000px;
-            height: 130px;
-            margin: 0 auto;
-            border-top: 1px solid #becedb;
-            padding-top: 20px;
-        }
-        
-        #latest > div {
-            width: 250px;
-            height: 130px;
-            float: left;
-            margin: 0 auto;
-        }
-
-        #latest > div > img:nth-child(1){
-            display: block;
-        }
-        #latest > div > img:nth-child(2){}
-        #latest > div > img:nth-child(3){}
-        #latest > div > img:nth-child(4){}
-        #latest > div > img:nth-child(5){}
-
-        .info1 > img:nth-child(1){padding-bottom: 10px;}
-        .info2 > img:nth-child(1){padding-bottom: 10px;}
-        .info3 > img:nth-child(1){padding-bottom: 10px;}
-        .info2 tr > td {
-            color: gray;
-            line-height: 18px;
-        }
-        .info3 tr > td {
-            color: gray;
-            line-height: 18px;
-        }
-        .info > img:nth-child(1) {  
-            padding-bottom: 10px;
-        }
-        #gal > a {
-            padding-top: 18px;
-            display: inline-block;
-        }
-        #gal > a > img{
-            width: 80px;
-            height: 60px;
-        }
-        footer > #address {
-            border-top: 1px solid #b9cadc;
-        }
-        footer > div > p {
-            font-size: 11px;
-            display: inline-block;
-            margin-top: 20px;
-            padding-left: 20px;
-            color: #555;
-            line-height: 20px;
-        }
-        #resort {
-            color: #5d99b5;
-        }
-        #copy {
-            display: inline-block;
-            font-family: Verdana;
-            color: rgb(153, 153, 153);
-            padding-top: 4px;
-        }
-        #address > .logo {
-            float: left;
-            padding-top: 14px;
-        }
-
-        
