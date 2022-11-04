@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px "note sans korean";
+}
+#wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+header > div {
+    width: 100%;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+header > div:nth-child(1) {
+    height: 44px;
+}
+header > div:nth-child(2) {
+    height: 110px;
+}
+header > div:nth-child(3) {
+    height: 44px;
+}
+header > div > section {
+    margin: 0 auto;
+    width: 1126px;
+    height: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+main {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+main > section {
+    width: 100%;
+    height: auto;
+    padding: 40px 0px;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+main > section > article > div {
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+main > section > article {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+.box1 {
+    height: 480px;
+}
+.box1 > article {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+.box2 {
+    height: auto;
+}
+.box2 > article {
+    height: 480px;
+}
+.box2 > article > div {
+    float: left;
+    width: 345px;
+}
+.box2 > article > div:nth-child(1) {
+    width: 434px;
+    height: 100%;
+}
+.box2 > article > div:nth-child(2) {
+    height: 50%;
+}
+.box2 > article > div:nth-child(3) {
+    height: 50%;
+}
+.box2 > article > div:nth-child(4) {
+    height: 50%;
+}
+.box2 > article > div:nth-child(5) {
+    height: 50%;
+}
+.box3 {
+    height: auto;
+}
+.box3 {
+    height: 660px;
+}
+.box3 > article > div {
+    float: left;
+    width: 25%;
+    height: 334px;
+}
+.box4 {
+    height: 220px;
+}
+.box5 {
+    height: auto;
+}
+.box5 > article {
+    height: 100%;
+    overflow: hidden;
+}
+.box5 > article > div {
+    float: left;
+    width: 25%;
+    height: 400px;
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+.box6 {
+    height: 220px;
+}
+.box7 {
+    height: auto;
+}
+.box7 > article {
+    height: 100%;
+    overflow: hidden;
+}
+.box7 > article > div {
+    float: left;
+    width: 25%;
+    height: 400px;
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+footer {
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+footer > div {
+    width: 1126px;
+    height: 210px;
+    margin: 0 auto;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
